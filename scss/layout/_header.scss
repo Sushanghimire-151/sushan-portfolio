@@ -1,0 +1,148 @@
+nav {
+  background-color: black;
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  padding: 24px 10px;
+  border-radius: 45px;
+  transform: translateY(-50%);
+  mix-blend-mode: luminosity;
+  background-color: rgb(197, 36, 36);
+  backdrop-filter: blur(100px);
+  z-index: 20;
+
+  @include mq('lg', max) {
+    display: none;
+  }
+}
+
+.nav {
+  &-img {
+    padding: 6px;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 34px;
+    transition: 0.3s;
+
+    img {
+      height: 20px;
+      width: 20px;
+    }
+  }
+  &-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
+    &:hover {
+    cursor: pointer;
+    .nav-img {
+    border: 2px solid #EDE6D6;
+    }
+    .nav-name {
+      // font-weight: 600;
+      color: #fff4d9;
+    }
+  }
+  }
+  &-name {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: white;
+    margin-top: 4px;
+    transition: 0.3s;
+  }
+}
+
+header {
+  background: black;
+  color: white;
+
+  &:hover {
+    .header-name {
+      letter-spacing: 36px;
+      color: rgb(238, 113, 113);
+    }
+  }
+}
+
+.header {
+  &-container {
+    text-align: center;
+  }
+
+  &-name {
+    text-transform: uppercase;
+    letter-spacing: 30px;
+    margin-bottom: 32px;
+    transition: all 2s ease-out;
+
+    @include mq('sm', max) {
+      letter-spacing: 8px;
+  }
+  }
+
+  &-designation {
+    .previous {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .a {
+        font-size: 40px;
+        margin-right: 24px;
+        @include mq('sm', max) {
+          font-size: 32px;
+          margin-right: 16px;
+        }
+      }
+    }
+    .and {
+      font-size: 24px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      @include mq('sm', max) {
+        margin: 0;
+      }
+    }
+    .roles {
+      font-size: 64px;
+      line-height: 100%;
+      font-weight: 700;
+      @include mq('sm', max) {
+        font-size: 48px;
+      }
+    }
+    .next {
+      font-size: 100px;
+      line-height: 100%;
+      font-weight: 700;
+
+      @include mq('sm', max) {
+        font-size: 64px;
+      }
+
+      &-data {
+        font-size: 120px;
+        line-height: 100%;
+        font-weight: 700;
+        @include mq('sm', max) {
+        font-size: 64px;
+      }
+      }
+    }
+    margin-bottom: 40px;
+
+    @include mq('sm', max) {
+        margin-bottom: 24px;
+        margin-top: 40px;
+      }
+  }
+}

@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font: normal normal normal 16px/1.5 "Montserrat", sans-serif;
+}
+
+svg {
+  height: 1em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.font-mont {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-arizonia {
+  font-family: "Arizonia", cursive;
+}
+
+.font-titillium {
+  font-family: "Titillium Web", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

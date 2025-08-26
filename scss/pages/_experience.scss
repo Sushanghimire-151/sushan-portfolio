@@ -1,0 +1,68 @@
+.experience {
+    &-section {
+        padding: 100px 0px;
+
+        @include mq('sm', max) {
+          padding: 16px 16px 32px;
+        }
+
+        .section-topic {
+            color: black;
+        }
+      }
+
+      &-container {
+        max-width: 968px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 54px;
+
+        @include mq('sm', max) {
+          gap: 32px;
+        }
+      }
+
+    &-item {
+        .header {
+            display: flex;
+            justify-content: space-between;
+
+            @include mq('sm', max) {
+                display: block;
+            }
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .designation {
+            font-size: 14px;
+            // line-height: 1;
+            font-style: italic;
+        }
+
+        .duration {
+            font-size: 14px;
+
+            .time {
+                font-weight: 700;
+            }
+            .location {
+                font-style: italic;
+            }
+        }
+
+        .desc {
+            margin-top: 16px;
+            margin-left: 48px;
+
+            @include mq('sm', max) {
+                margin-left: 28px;
+                font-size: 14px;
+            }
+        }
+    }
+}

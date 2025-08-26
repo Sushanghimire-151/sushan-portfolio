@@ -1,0 +1,64 @@
+/************************************** 
+********* Some generic styles
+***************************************/
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  // min-height: 100vh;
+  padding: 100px 0;
+  @include mq('lg', max) {
+    padding: 32px;
+  }
+}
+
+.section-topic {
+  color: white;
+  font-size: 64px;
+  font-weight: 700;
+  font-family: "Titillium Web", sans-serif;
+  padding: 16px 0 12px;
+
+  @include mq('sm', max) {
+    font-size: 48px;
+  }
+}
+
+/************************************** 
+********* Transparent type effect
+***************************************/
+
+.transparent-wrapper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 50;
+  pointer-events: none;
+}
+.transparent-wrapper:before,
+.transparent-wrapper:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100px;
+}
+.transparent-wrapper:before {
+  top: 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(231, 216, 76, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+}
+.transparent-wrapper:after {
+  bottom: 0;
+  /* Use your background color, assuming white: */
+  background-image: linear-gradient(
+    to top,
+    rgba(231, 124, 124, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+}

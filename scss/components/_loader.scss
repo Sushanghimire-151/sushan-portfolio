@@ -1,0 +1,22 @@
+.loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .load-text {
+    font-size: 100px;
+    font-weight: 700;
+    color: white;
+  }
+}
+
+/************************************** 
+********* Blur container
+***************************************/
+// .blur-container {
+//   filter: blur(30px);
+// }

@@ -1,0 +1,86 @@
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 100px 0 40px 0;
+
+  @include mq('sm', max){
+    padding: 32px;
+  }
+}
+
+.footer {
+  &-container {
+    text-align: center;
+  }
+
+  &-name {
+    font-size: 80px;
+  }
+
+  &-sign {
+    font-size: 74px;
+    letter-spacing: 5px;
+  }
+
+  &-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0;
+    column-gap: 16px;
+  }
+  &-icon {
+    height: auto;
+    width: 20px;
+    transition: all 1s ease;
+    cursor: pointer;
+
+    &:hover {
+      scale: 1.1;
+    }
+
+    &-phone {
+      height: 32px;
+      width: auto;
+      transition: all 1s ease;
+    }
+  }
+  &-number {
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      letter-spacing: 2px;
+      img {
+        scale: 1.1;
+      }
+    }
+  }
+  &-mail {
+    margin-top: 12px;
+    margin-bottom: 40px;
+    a {
+      color: white;
+      text-decoration: underline;
+      transition: all 1s ease-in-out;
+      letter-spacing: 1px;
+      &:hover {
+        letter-spacing: 3px;
+      }
+    }
+  }
+
+  &-copyright {
+    font-size: 12px;
+    color: white;
+    margin-top: 32px;
+    opacity: 0.8;
+  }
+}
